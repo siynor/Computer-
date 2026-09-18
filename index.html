@@ -2,7 +2,8 @@
   <head>
     <style>
       body {
-        background-color: hwb(180 63% 2%);
+        background: linear-gradient(135deg, #12a6ea, #52fba1);
+        color:lab(0% 0 0);
       }
     </style>
   </head>
@@ -10,8 +11,9 @@
     <b>
     <h1>components of a computer</h1>
     </b>
-    <ol>
-    
+      <div class="container">
+        
+        <div class="card">
       <h2>
       <li>input unit</li>
       </h2>
@@ -19,6 +21,8 @@
       <ul>
       <li>Examples: Keyboard, mouse, scanner, microphone.</li>
       </ul>
+        </div>
+        <div class="card">
       <h2><li>CPU(Central Processing Unit)</li></h2>
       <b>The brain of the computer.</b> It processes instructions.
       <ul>
@@ -26,18 +30,37 @@
       <li><B>CU</B>(Control Unit) - Controls and coordinates computer operations.</li>
       <li><B>Registers</B> - Temporarily hold data and instructions during processing.</li>
       </ul>
+        </div>
+        <div class="card">
       <h2><li>memory unit</li></h2>
       Stores data and instructions.
       <ul>
       <li><b>Primary memory</b>: RAM, ROM</li>
       <li><b>Secondary memory</b>: HDD, SSD, pen drive</li>
       </ul>
+        </div>
+        <div class="card">
       <h2><li>output unit</li></h2>
       Displays the processed information.
       <ul>
       <li>Examples: Monitor, printer, speakers.</li>
       </ul>
-    </ol>
+        </div>
+      </div>
+    <style>
+  .container{
+    display:flex;
+    flex-direction:column;
+    gap:10;
+  }
+      .card{
+        background-color:hwb(184 80% 0% / 0.7803921568627451);
+        padding:10px;
+        border-radius:15px;
+        margin:15px;
+        box-shadow:0 8px 25px hwb(184 35% 32%);
+      }
+    </style>
     <a href ="browser-list.html">different browsers </a>
   </body>
 </html>
