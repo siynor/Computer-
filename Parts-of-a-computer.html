@@ -3,83 +3,120 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
       body{
-        background:linear-gradient(135deg,hwb(240 37% 6%),hwb(307 59% 8%));
-        color:hwb(0 100% 0%);
+        margin:0px;
+        background:linear-gradient(150deg,hwb(204 53% 14%),hwb(168 60% 13%),hwb(172 47% 33%));
+        color:lab(0% 0 0);
       }
       </style>
   </head>
   <body>
-    <ol>
-      <h1>Parts of a Computer</h1>
-      <img src="monitor.jpg" width=350>
-      <li><h2>monitor</h2></li>
+    <div class="container">
+      <div class="card">
+      <h1>--Parts of a Computer--</h1>
+      </div>
+      <div class="card">
+      <img src="monitor.jpg" width=300 height=250>
+        <h2><li>Monitor</li></h2>
       <ul>
         <li>Displays text, images, videos, and other information from the computer.</li>
         <li>it is an output device.</li>
       </ul>
+      </div>
       <br>
-      <img src="cpu.jpg" width=350>
-      <li><h2>CPU (Central Processing Unit)</h2></li>
+      <div class="card">
+      <img src="cpu.jpg" width=300 height=250>
+      <h2><li>CPU (Central Processing Unit)</li></h2>
       <ul>
         <li>called the brain of the computer.</li>
         <li>processes information and controls other parts of the computer.</li>
         <li>main parts include ALU,Control Unit (CU) and registers.</li>
       </ul>
+      </div>
       <br>
-      <img src="keyboard.jpg" width=350>
-      <li><h2>keyboard</h2></li>
+      <div class="card">
+      <img src="keyboard.jpg" width=300 height=250>
+      <h2><li>keyboard</li></h2>
       <ul>
         <li>Used to enter letters, numbers, symbols, and commands.</li>
         <li>it is an input device.</li>
       </ul>
+      </div>
       <br>
-      <img src="mouse.jpg" width=350>
-      <li><h2>Mouse</h2></li>
+      <div class="card">
+      <img src="mouse.jpg" width=300 height=250>
+      <h2><li>Mouse</li></h2>
       <ul>
         <li>Used to move the pointer, select items, open files, and interact with the screen.</li>
         <li>it is an input device.</li>
       </ul>
+      </div>
       <br>
-      <img src="RAM.jpg" width=350>
-      <li><h2>RAM (Random Access Memory)</h2></li>
+      <div class="card">
+      <img src="RAM.jpg" width=300 height=250>
+      <h2><li>RAM (Random Access Memory)</li></h2>
       <ul>
         <li>Temporarily stores data and programs that the CPU is currently using.</li>
         <li>It is volatile, meaning its contents are lost when the computer is turned off.</li>
       </ul>
+      </div>
       <br>
-      <img src="storage-device.jpg" width=350>
-      <li><h2>Storage Device</h2></li>
+      <div class="card"> 
+      <img src="storage-device.jpg" width=300 height=250>
+      <h2><li>Storage Device</li></h2>
       <ul>
         <li>Stores data, programs, photos, videos, and files permanently.</li>
         <li>Examples: HDD (Hard Disk Drive) and SSD (Solid State Drive).</li>
       </ul>
+      </div>
       <br>
-      <img src="motherboard.jpg" width=350>
-      <li><h2>Motherboard</h2></li>
+      <div class="card">
+      <img src="motherboard.jpg" width=300 height=250>
+      <h2><li>Motherboard</li></h2>
       <ul>
         <li>The main circuit board of a computer.</li>
         <li>Connects the CPU, RAM, storage, and other components so they can communicate.</li>
       </ul>
+      </div>
       <br>
-      <img src="psu.jpg" width=350>
-      <li><h2>Power Supply Unit (PSU)</h2></li>
+      <div class="card">
+      <img src="psu.jpg" width=300 height=250>
+      <h2><li>Power Supply Unit (PSU)</li></h2>
       <ul>
         <li>Converts electricity from the power outlet into the required power for computer components.</li>
       </ul>
+      </div>
       <br>
-      <img src="speaker.jpg" width=350>
-      <li><h2>Speaker</h2></li>
+      <div class="card">
+      <img src="speaker.jpg" width=300 height=250>
+      <h2><li>Speaker</li></h2>
       <ul>
         <li>Produce sound from the computer.</li>
         <li>They are output devices.</li>
       </ul>
+      </div>
       <br>
-      <img src="printer.jpg" width=350>
-      <li><h2>Printer</h2></li>
+      <div class="card">
+      <img src="printer.jpg" width=300 height=250>
+      <h2><li>Printer</li></h2>
       <ul>
         <li>Produces a physical copy of digital documents or images.</li>
         <li>it is an output device</li>
       </ul>
-    </ol>
+      </div>
+    </div>
+    <style>
+    .container{
+      display:flex;
+      flex-direction: column;
+      gap:7px;
+    }
+      .card{
+        background-color:hwb(177 73% 3%);
+        padding:15px;
+        margin:15px;
+        border-radius :20px;
+        box-shadow: 0 8px 25px hwb(186 24% 68%);
+      }
+      </style>
   </body>
 </html>
